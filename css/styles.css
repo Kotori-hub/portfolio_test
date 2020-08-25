@@ -89,7 +89,6 @@ html {
 
 body {
   font-family: "Segoe UI", sans-serif;
-
   color: #333;
   word-break: break-word;
   -webkit-font-feature-settings: "palt" 1;
@@ -167,7 +166,8 @@ p {
 /*---------------gird---------------*/
 
 .grid {
-  width: 767px;
+  max-width: 767px;
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
   display: grid;
@@ -758,6 +758,7 @@ body.menu-open .nav__open {
 
 @media screen and (min-width: 768px) {
   .grid {
+    max-width: 12.8rem;
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
