@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <meta name="description"
+    content="Hair Salon Kotoriのお問い合わせフォームです。ご予約などお気軽にお問い合わせください。">
+  <meta name="keywords" content="小鳥町,カット予約,美容室,美容院,ヘアサロン">
+  <link rel="icon" type="img/png" href="img/ファビコン.png">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="grid">
+    <!--header-->
+    <header class="l-header">
+      <div class="container header__wap clearfix">
+        <h1>
+          <a href="index.html">
+            <img class="p-logo" src="img/Hair Salon Kotori-logo.png" alt="Hair Salon Kotoriロゴ画像">
+          </a>
+        </h1>
+        <div class="nav__open">
+          <i class="fas fa-bars fa-fw" id="open"></i>
+          <p>Menu</p>
+        </div>
+        <nav>
+          <ul class="header__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="index.html#staff">Staff</a></li>
+            <li><a href="index.html#access">Access</a></li>
+            <li class="btn__contact"><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="menu" class="clearfix">
+        <i id="close" class="fas fa-times fa-fw nav__close"></i>
+        <nav>
+          <ul class="header__nav--sm">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="index.html#staff">Staff</a></li>
+            <li><a href="index.html#access">Access</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--Contact-->
+    <section class="l-contact container">
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__intro">お電話でのお問い合わせは03-XXXX-XXXX<br>
+        メールでのお問い合わせ・ご予約は下記のフォームよりお願いします。<br>
+        折り返し連絡いたします。（※は入力必須です。）</p>
+      <form action="#" class="form__wrapper">
+        <div>
+          <label for="name">お名前 ※</label>
+          <input type="text" id="name" name="your-name" placeholder="お名前をご入力ください。">
+          <div class="name-confirmation"></div>
+					<div class="name-miss"></div>
+        </div>
+        <div>
+          <label for="phone">電話番号 ※</label>
+          <input type="text" id="phone" name="your-phone" placeholder="例：090-XXXX-XXXX">
+          <div class="phone-confirmation"></div>
+					<div class="phone-miss"></div>
+        </div>
+        <div>
+          <label for="email">メールアドレス ※</label>
+          <input type="text" id="email" name="your-email" placeholder="メールアドレスをご入力ください。">
+          <!--入力を確認する際は、下記に入力内容が表示-->
+					<div class="mail-confirmation"></div>
+					<!--ミスがあった際は、下記にエラーが表示-->
+					<div class="mail-miss"></div>
+        </div>
+        <div>
+          <div class="inquiry__box">
+            <label for="inquiry">お問い合わせ内容 ※</label>
+            <p class="inquiry__text">（お電話での折り返しにご都合の悪い時間帯がありましたらご記入ください。）</p>
+          </div>
+          <textarea id="inquiry" name="your-inquiry" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+          <div class="text-confirmation"></div>
+        </div>
+        <!--入力時にはこちらのボタンが表示-->
+        <input type="submit" class="inquiry__btn" value="確認">
+        <!--確認時にはこちらのボタンが表示。最初はクラスdelate-areaで非表示に-->
+        <div class="delate-area back-sendBox">
+          <button class="back__btn inquiry__btn">戻る</button>
+          <button class="send__btn inquiry__btn">送信</button>
+        </div>
+      </form>
+    </section>
+    </main>
+
+    <!--footer-->
+    <footer class="l-footer">
+      <div class="footer__wap">
+        <h2 class="section__title footer__title">SNS</h2>
+        <ul class="sns__list">
+          <li><a href="#"><img class="sns__item" src="img/twitter黒.png" alt="twitterリンク"></a></li>
+          <li><a href="#"><img class="sns__item" src="img/FACEBOOK黒.png" alt="FACEBOOKリンク"></a></li>
+          <li><a href="#"><img class="sns__item" src="img/WordPress黒.png" alt="WordPressリンク"></a></li>
+        </ul>
+        <nav>
+          <ul class="footer__nav">
+            <li class="f-nav__link"><a href="#top">Top</a></li>
+            <li class="f-nav__link"><a href="recruit.html">Recruit</a></li>
+            <li class="btn__contact footer__btn"><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="f__copy">Copyright 2020 Hair Salon Kotori Kotori</p>
+      </div>
+    </footer>
+  </div>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
