@@ -643,6 +643,7 @@ body.menu-open .nav__open {
 
 /*---------------staff---------------*/
 /*---------------access---------------*/
+
 .access__box {
   display: flex;
   flex-wrap: wrap;
@@ -1078,6 +1079,7 @@ body.menu-open .nav__open {
 
 .menu__list {
   max-width: 6rem;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 1.3rem;
 }
@@ -1111,7 +1113,8 @@ body.menu-open .nav__open {
 
 @media screen and (min-width: 768px) {
   .menu__list {
-    width: 680px;
+    max-width: 6.8rem;
+    width: 100%;
   }
 
   .menu__detail {
@@ -1152,7 +1155,7 @@ body.menu-open .nav__open {
 
 @media screen and (min-width: 768px) {
   .style__wrap {
-    height: 100%;
+    min-height: 100vh;
   }
 
   .style__list {
@@ -1160,7 +1163,7 @@ body.menu-open .nav__open {
     justify-content: space-between;
     text-align: left;
     position: relative;
-    max-width: 1080px;
+    max-width: 10.80rem;
     width: 100%;
     min-height: 560px;
   }
@@ -1216,6 +1219,7 @@ body.menu-open .nav__open {
 
 form {
   max-width: 6rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1305,7 +1309,8 @@ textarea {
 }
 
 .recruit__list {
-  width: 3rem;
+  max-width: 3rem;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 60px;
 }
@@ -1313,7 +1318,8 @@ textarea {
 .recruit__list dt {
   display: inline-block;
   text-align: left;
-  width: 1.5rem;
+  max-width: 1.5rem;
+  width: 100%;
   font-size: 0.16rem;
 }
 
@@ -1368,7 +1374,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .recruit__list {
-    width: 3rem;
+    max-width: 3rem;
+    width: 100%;
     margin-left: 2rem;
     margin-bottom: 60px;
   }
