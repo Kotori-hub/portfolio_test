@@ -84,7 +84,7 @@ body {
 }
 
 html {
-  font-size: 100px;
+  font-size: 150px;
 }
 
 body {
@@ -590,7 +590,6 @@ body.menu-open .nav__open {
   opacity: 0.7;
 }
 
-
 .info__btn {
   width: 1.6rem;
   height: 0.45rem;
@@ -757,6 +756,11 @@ body.menu-open .nav__open {
 /*---------------レスポンシブ---------------*/
 
 @media screen and (min-width: 768px) {
+
+  html {
+    font-size: 100px;
+  }
+
   .grid {
     max-width: 12.8rem;
     width: 100%;
@@ -823,7 +827,7 @@ body.menu-open .nav__open {
   .header__nav li + li {
     margin-left: 0.4rem;
   }
-  
+
   /*---------nav----------*/
   /*---------top-img----------*/
 
@@ -1164,7 +1168,7 @@ body.menu-open .nav__open {
     justify-content: space-between;
     text-align: left;
     position: relative;
-    max-width: 10.80rem;
+    max-width: 10.8rem;
     width: 100%;
     min-height: 560px;
   }
