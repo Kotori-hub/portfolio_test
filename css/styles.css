@@ -756,7 +756,6 @@ body.menu-open .nav__open {
 /*---------------レスポンシブ---------------*/
 
 @media screen and (min-width: 768px) {
-
   html {
     font-size: 100px;
   }
@@ -799,6 +798,17 @@ body.menu-open .nav__open {
 
   /*---------common----------*/
   /*---------nav----------*/
+
+  .l-header,
+  .header__wap {
+    height: 50px;
+  }
+
+  .p-logo {
+    max-width: 150px;
+    width: 100%;
+  }
+
 
   #menu {
     display: none;
