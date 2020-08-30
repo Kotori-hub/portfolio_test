@@ -174,7 +174,7 @@ p {
   grid-template:
     "header" 100px
     "main  " 1fr
-    "footer" 250px;
+    "footer" 300px;
 }
 
 .container {
@@ -650,8 +650,9 @@ body.menu-open .nav__open {
   max-width: 500px;
   width: 100%;
   background: #e0e0e0;
-  padding: 30px 50px 40px;
+  padding: 30px 30px 40px;
   margin: 0 auto 50px;
+  box-sizing: border-box;
 }
 
 .access__textarea h3 {
@@ -697,7 +698,7 @@ body.menu-open .nav__open {
   font-size: 0.18rem;
   padding-bottom: 5px;
   padding-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .sns__list {
@@ -707,7 +708,7 @@ body.menu-open .nav__open {
 }
 
 .sns__list li {
-  max-width: 40px;
+  max-width: 50px;
 }
 
 .sns__list li + li {
@@ -716,10 +717,6 @@ body.menu-open .nav__open {
 
 .sns__list a:hover {
   border: none;
-}
-
-.footer__nav {
-  font-size: 0.12rem;
 }
 
 .f-nav__link {
@@ -736,10 +733,10 @@ body.menu-open .nav__open {
 
 .footer__btn {
   display: block;
-  margin: 0 auto 10px;
-  width: 100px;
-  height: 25px;
-  line-height: 25px;
+  margin: 0 auto 30px;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
   font-size: 0.1rem;
 }
 
@@ -849,7 +846,7 @@ body.menu-open .nav__open {
   /*---------top-img----------*/
   /*---------concept----------*/
 
- .l-concept {
+  .l-concept {
     background-image: url(../img/concept__bg.png);
     max-width: 1280px;
     width: 100%;
