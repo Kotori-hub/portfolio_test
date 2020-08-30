@@ -444,7 +444,6 @@ body.menu-open .nav__open {
   background-size: cover;
   max-width: 767px;
   width: 100%;
-  /*max-height: 700px;*/
   margin: 0 auto;
   padding-bottom: 100px;
 }
@@ -850,11 +849,11 @@ body.menu-open .nav__open {
   /*---------top-img----------*/
   /*---------concept----------*/
 
-  .l-concept {
+ .l-concept {
     background-image: url(../img/concept__bg.png);
     max-width: 1280px;
     width: 100%;
-    padding-bottom: 0;
+    height: 100%;
   }
 
   .l-concept__grid {
