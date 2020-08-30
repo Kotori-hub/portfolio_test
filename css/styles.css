@@ -445,7 +445,7 @@ body.menu-open .nav__open {
   max-width: 767px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 0;
 }
 
 .concept__textarea {
@@ -624,7 +624,7 @@ body.menu-open .nav__open {
 }
 
 .staff__img {
-  padding: 20px;
+  padding: 20px 20px 30px;
 }
 
 .staff__name {
@@ -650,7 +650,7 @@ body.menu-open .nav__open {
   max-width: 500px;
   width: 100%;
   background: #e0e0e0;
-  padding: 30px 30px 40px;
+  padding: 30px 40px 40px;
   margin: 0 auto 50px;
   box-sizing: border-box;
 }
@@ -663,14 +663,14 @@ body.menu-open .nav__open {
 }
 
 .access__text--left {
-  width: 37%;
+  width: 35%;
   text-align: left;
   margin-bottom: 15px;
   font-size: 0.14rem;
 }
 
 .access__text--right {
-  width: 63%;
+  width: 65%;
   text-align: left;
   margin-bottom: 15px;
 }
@@ -1027,14 +1027,13 @@ body.menu-open .nav__open {
     display: grid;
     display: -ms-grid;
     grid-template:
-      "a-text a-map"
-      / 5rem 1fr;
+      "a-text a-map";
     max-width: 1080px;
   }
 
   .access__textarea {
     grid-area: a-text;
-    padding: 0.3rem 0.5rem 0.4rem;
+    padding: 30px 50px 40px;
     margin: 0 auto;
     background: #fff;
     margin: 0;
