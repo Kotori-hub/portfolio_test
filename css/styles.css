@@ -809,7 +809,6 @@ body.menu-open .nav__open {
     width: 100%;
   }
 
-
   #menu {
     display: none;
   }
@@ -959,6 +958,11 @@ body.menu-open .nav__open {
   /*---------measures----------*/
   /*---------info----------*/
 
+  .info__list li {
+    max-width: 500px;
+    width: 100%;
+  }
+
   /*---------info----------*/
   /*---------staff----------*/
 
@@ -1049,7 +1053,7 @@ body.menu-open .nav__open {
 
   .footer__title {
     font-size: 0.24rem;
-    margin-bottom:15px;
+    margin-bottom: 15px;
   }
 
   .sns__list {
