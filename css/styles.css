@@ -172,7 +172,10 @@ p {
     margin: 0 auto;
     min-height: 100vh;
     display: grid;
-    grid-template: "header" 100px "main  " 1fr "footer" 300px;
+    grid-template: 
+    "header" 100px 
+    "main  " 1fr 
+    "footer" 300px;
 }
 
 .container {
@@ -208,7 +211,13 @@ main {
     grid-area: main;
     display: grid;
     display: -ms-grid;
-    grid-template: "img     " "concept " "measures" "info    " "staff   " "access  " / 767px;
+    grid-template: 
+    "img     " 
+    "concept " 
+    "measures" 
+    "info    " 
+    "staff   " 
+    "access  ";
 }
 
 .l-top__img {
