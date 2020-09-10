@@ -1,1422 +1,240 @@
-@charset "UTF-8";
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    width: 100%;
-    min-height: 100vh;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: "Segoe UI", sans-serif;
-    color: #333;
-    word-break: break-word;
-    -webkit-font-feature-settings: "palt" 1;
-    font-feature-settings: "palt" 1;
-    /*カーニング*/
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: justify;
-    letter-spacing: 0.05em;
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover {
-    -webkit-text-decoration: underline #333;
-    text-decoration: underline #333;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
-}
-
-h1 {
-    font-size: 3.2rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.6rem;
-}
-
-/*---------------リセット---------------*/
-
-/*---------------スクロール---------------*/
-
-.effect-fade {
-    opacity: 0;
-    /*transform: translate(0, 0.45rem);*/
-    transition: all 600ms;
-}
-
-.effect-fade.effect-scroll {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-/*---------------スクロール---------------*/
-
-/*---------------gird---------------*/
-
-.grid {
-    max-width: 767px;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: grid;
-    grid-template:
-        "header" 100px
-        "main  " 1fr
-        "footer" 300px;
-}
-
-.container {
-    max-width: 727px;
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.l-concept,
-.l-measures,
-.l-info,
-.l-staff,
-.l-access {
-    padding-bottom: 100px;
-    width: 100%;
-}
-
-.l-header {
-    grid-area: header;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: #d2b48c;
-    z-index: 5;
-}
-
-main {
-    grid-area: main;
-    display: grid;
-    display: -ms-grid;
-    grid-template:
-        "img     "
-        "concept "
-        "measures"
-        "info    "
-        "staff   "
-        "access  ";
-}
-
-.l-top__img {
-    grid-area: img;
-}
-
-.l-concept__grid {
-    grid-area: concept;
-}
-
-.l-measures {
-    grid-area: measures;
-}
-
-.l-info {
-    grid-area: info;
-}
-
-.l-staff__grid {
-    grid-area: staff;
-}
-
-.l-access__grid {
-    grid-area: access;
-}
-
-.l-footer {
-    grid-area: footer;
-    background: #d2b48c;
-    width: 100%;
-}
-
-/*---------------gird---------------*/
-
-/*---------------common---------------*/
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-    line-height: 0px;
-    font-size: 0px;
-}
-
-a {
-    color: #000;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: none;
-    border-bottom: 0.5px solid #333;
-}
-
-.section__title {
-    font-family: "Amiri", serif;
-    font-size: 3.4rem;
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-    padding-top: 80px;
-    padding-bottom: 0;
-    margin-bottom: 50px;
-}
-
-.section__title::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #333;
-    content: "";
-}
-
-.btn__contact {
-    width: 110px;
-    height: 25px;
-    line-height: 25px;
-    background: #333;
-    position: relative;
-    border-radius: 20px;
-    display: inline-block;
-}
-
-.btn__contact a {
-    display: inline-block;
-    padding-left: 5px;
-    color: #fff;
-}
-
-.btn__contact a::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.btn__contact a:hover {
-    text-decoration: none;
-    opacity: 0.8;
-    border: none;
-}
-
-.fa-envelope {
-    color: #fff;
-    height: 25px;
-    line-height: 25px;
-}
-
-/*---------------common---------------*/
-
-/*---------------ハンバーガー---------------*/
-
-#menu {
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9;
-    display: block;
-    width: 100%;
-    min-height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition-duration: 0.8s;
-}
-
-body.menu-open #menu {
-    visibility: visible;
-    opacity: 1;
-}
-
-body.menu-open .nav__open {
-    display: none;
-}
-
-.header__nav--sm {
-    text-align: center;
-    font-size: 2.4rem;
-    font-family: serif;
-    margin-top: 100px;
-}
-
-.header__nav--sm li + li {
-    margin-top: 25px;
-}
-
-.header__nav--sm a {
-    color: #fff;
-}
-
-.header__nav--sm a:hover {
-    border-bottom: 1px solid #fff;
-}
-
-/*---------------ハンバーガー---------------*/
-
-/*---------------header---------------*/
-
-.header__wap {
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-
-.p-logo {
-    max-width: 250px;
-    width: 100%;
-    float: left;
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-}
-
-.nav__open,
-.nav__close {
-    float: right;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-#open,
-#close {
-    font-size: 5rem;
-}
-
-.nav__open p {
-    font-size: 1.4rem;
-    margin-top: -6px;
-}
-
-.header__nav {
-    display: none;
-    float: right;
-}
-
-#close {
-    color: #fff;
-}
-
-/*---------------header---------------*/
-
-/*---------------top-img---------------*/
-
-.top-img {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-/*---------------top-img---------------*/
-
-/*---------------concept---------------*/
-
-.l-concept {
-    background-image: url(../img/concept__bg-sm.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 767px;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 0;
-}
-
-.concept__textarea {
-    margin-bottom: 100px;
-    display: block;
-}
-
-.concept__title {
-    font-family: "Amiri", serif;
-    font-size: 3.4rem;
-    font-weight: normal;
-    display: inline-block;
-    padding-top: 80px;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
-}
-
-.concept__text01 {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-}
-
-.concept__text02,
-.concept__text03 {
-    text-align: left;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.concept__text03 {
-    margin-top: 20px;
-}
-
-.concept__img {
-    position: relative;
-    display: block;
-}
-
-.concept__img img {
-    box-shadow: 0 2px 4px #a0a0a0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
-.img__bg {
-    background-color: rgba(222, 184, 135, 0.8);
-    max-width: 767px;
-    width: 100%;
-    height: 300px;
-    display: block;
-    /*margin-right: 10px;
-  margin-left: 10px;*/
-    padding-top: 100px;
-    padding-bottom: 100px;
-    z-index: -1;
-}
-
-.bg_text {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 6rem;
-    writing-mode: vertical-rl;
-    position: absolute;
-    top: 50%;
-    right: -2%;
-    transform: translateY(-50%);
-}
-
-/*---------------concept---------------*/
-
-/*---------------measures---------------*/
-
-.measures__item {
-    position: relative;
-}
-
-.measures__item img {
-    max-width: 400px;
-    width: 100%;
-}
-
-.measures__item + .measures__item {
-    margin-top: 80px;
-}
-
-.measures__intro {
-    margin: 0 auto 40px;
-    max-width: 600px;
-    width: 100%;
-    text-align: left;
-}
-
-.measures__text {
-    position: absolute;
-    top: 280px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: left;
-    max-width: 340px;
-    width: 100%;
-}
-
-/*---------------measures---------------*/
-
-/*---------------information---------------*/
-
-.info__list {
-    /*width: 5.8rem;*/
-    margin: 0 auto;
-    color: #000;
-    padding-bottom: 50px;
-}
-
-.info__list li {
-    display: flex;
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto 10px;
-}
-
-.info__news {
-    margin-left: 15px;
-    position: relative;
-}
-
-.info__news a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #333;
-    content: "";
-}
-
-.info__news a:hover {
-    text-decoration: none;
-    border: none;
-    opacity: 0.7;
-}
-
-.info__btn {
-    width: 160px;
-    height: 55px;
-    line-height: 55px;
-    border: 1px solid #333;
-    font-size: 1.6rem;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.info__btn a:hover {
-    text-decoration: none;
-    color: #555;
-}
-
-/*---------------information---------------*/
-
-/*---------------staff---------------*/
-
-.l-staff {
-    background-color: rgba(222, 184, 135, 0.6);
-}
-
-.staff__box {
-    max-width: 400px;
-    width: 100%;
-    height: 620px;
-    background: #fff;
-    margin: 0 auto;
-    box-shadow: 0 0 6px #c0c0c0;
-    line-height: 1.3;
-}
-
-.staff__box + .staff__box {
-    margin-top: 50px;
-}
-
-.staff__img {
-    padding: 20px 20px 30px;
-}
-
-.staff__name {
-    font-size: 2rem;
-    padding-bottom: 15px;
-}
-
-.staff__text {
-    text-align: left;
-    margin: 0 20px;
-}
-
-/*---------------staff---------------*/
-
-/*---------------access---------------*/
-
-.access__box {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
-}
-
-.access__textarea {
-    max-width: 500px;
-    width: 100%;
-    background: #e0e0e0;
-    padding: 30px 40px 40px;
-    margin: 0 auto 50px;
-    box-sizing: border-box;
-}
-
-.access__textarea h3 {
-    font-size: 2.4rem;
-    font-weight: normal;
-    font-family: "Amiri", serif;
-    margin-bottom: 25px;
-}
-
-.access__text--left {
-    width: 35%;
-    text-align: left;
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-}
-
-.access__text--right {
-    width: 65%;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.access__btn {
-    width: 200px;
-    height: 38px;
-    line-height: 38px;
-    font-size: 1.4rem;
-    background: #888;
-}
-
-.access__btn a {
-    padding-left: 10px;
-}
-
-/*---------------access---------------*/
-
-/*---------------footer---------------*/
-
-.footer__wap {
-    text-align: center;
-}
-
-.footer__title {
-    font-size: 1.8rem;
-    padding-bottom: 5px;
-    padding-top: 30px;
-    margin-bottom: 20px;
-}
-
-.sns__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.sns__list li {
-    max-width: 50px;
-}
-
-.sns__list li + li {
-    margin-left: 15px;
-}
-
-.sns__list a:hover {
-    border: none;
-}
-
-.f-nav__link {
-    font-family: "Amiri", serif;
-    display: inline-block;
-    margin-bottom: 10px;
-    font-size: 1.6rem;
-}
-
-.f-nav__link + .f-nav__link {
-    margin-left: 10px;
-    border-left: 1px solid #888;
-    padding-left: 10px;
-}
-
-.footer__btn {
-    display: block;
-    margin: 0 auto 30px;
-    width: 120px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1rem;
-}
-
-.footer__btn a:hover {
-    border: none;
-}
-
-.f__copy {
-    font-size: 0.8rem;
-}
-
-/*---------------footer---------------*/
-
-/*---------------レスポンシブ---------------*/
-
-@media screen and (min-width: 768px) {
-    .grid {
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
-        min-height: 100vh;
-        display: grid;
-        grid-template:
-            "header" 50px
-            "main  " 1fr
-            "footer" 230px;
-    }
-
-    main {
-        margin: 0 auto;
-        grid-area: main;
-        display: grid;
-        display: -ms-grid;
-        grid-template:
-            "img     "
-            "concept "
-            "measures"
-            "info    "
-            "staff   "
-            "access  ";
-    }
-    /*---------grid----------*/
-    /*---------common----------*/
-
-    .container {
-        max-width: 1080px;
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0 auto;
-    }
-
-    /*---------common----------*/
-    /*---------nav----------*/
-
-    .l-header,
-    .header__wap {
-        height: 50px;
-    }
-
-    .p-logo {
-        max-width: 150px;
-        width: 100%;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .nav__open {
-        display: none;
-    }
-
-    .header__nav {
-        font-family: "Amiri", serif;
-        display: block;
-        align-items: center;
-        font-size: 1.8rem;
-        position: relative;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-    }
-
-    .header__nav li {
-        display: inline-block;
-    }
-
-    .header__nav li + li {
-        margin-left: 40px;
-    }
-
-    /*---------nav----------*/
-    /*---------top-img----------*/
-
-    .top-img {
-        /*max-width: 1280px;
-        width: 100%;*/
-        max-height: 700px;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    /*---------top-img----------*/
-    /*---------concept----------*/
-
-    .l-concept {
-        background-image: url(../img/concept__bg.png);
-        max-width: 1280px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .l-concept__grid {
-        grid-area: concept;
-        max-width: 1280px;
-        display: grid;
-        display: -ms-grid;
-        grid-template:
-            "c-text c-img" 700px
-            /52% 48%;
-        position: relative;
-    }
-
-    .concept__textarea {
-        grid-area: c-text;
-        text-align: left;
-        margin-right: 6.52%;
-        margin-left: 13.04%;
-    }
-
-    .concept__text02,
-    .concept__text03 {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .concept__img {
-        grid-area: c-img;
-    }
-
-    .concept__img img {
-        position: absolute;
-        width: 450px;
-        top: 0;
-        bottom: 0;
-        right: 26.08%;
-        /*margin: auto;*/
-    }
-
-    .img__bg {
-        background-color: rgba(222, 184, 135, 0.6);
-        position: absolute;
-        max-width: 500px;
-        top: 100px;
-        right: 0;
-        display: block;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-    .bg_text {
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 10rem;
-        writing-mode: vertical-rl;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 2%;
-    }
-
-    /*---------concept----------*/
-    /*---------measures----------*/
-
-    .l-measures {
-        padding-bottom: 50px;
-    }
-
-    .measures__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: space-between;
-    }
-
-    .measures__list:after {
-        content: "";
-        display: block;
-        width: 300px;
-        height: 0;
-    }
-
-    .measures__item img {
-        max-width: 300px;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .measures__item + .measures__item {
-        margin-top: 0;
-    }
-
-    .measures__text {
-        position: absolute;
-        top: 210px;
-        max-width: 250px;
-        padding-right: 25px;
-        padding-left: 25px;
-    }
-
-    /*---------measures----------*/
-    /*---------info----------*/
-
-    .info__list li {
-        max-width: 500px;
-        width: 100%;
-    }
-
-    /*---------info----------*/
-    /*---------staff----------*/
-
-    .l-staff {
-        background-color: #fff;
-        background-image: url(../img/木目bg.jpg);
-    }
-
-    .l-staff__grid {
-        grid-area: staff;
-        /* display: grid;
-        display: -ms-grid;
-        gap: 11.73%;
-        grid-template: 
-        "staff01 staff02 staff03" 
-        /1fr 1fr 1fr;*/
-        display: flex;
-    }
-
-    .staff__title {
-        color: #fff;
-        text-shadow: 1px 1px 5px #333;
-    }
-
-    .staff__title::after {
-        background: #fff;
-    }
-
-    .staff__box {
-        height: 450px;
-        background: #fff;
-        margin: 0 40px;
-        box-shadow: 0 0 6px #c0c0c0;
-    }
-
-    .staff__box01 {
-        grid-area: staff01;
-    }
-
-    .staff__box02 {
-        grid-area: staff02;
-    }
-
-    .staff__box03 {
-        grid-area: staff03;
-    }
-
-    .staff__box + .staff__box {
-        margin-top: 0;
-    }
-
-    .staff__name {
-        padding-top: 0;
-        padding-bottom: 20px;
-    }
-
-    .staff__text {
-        text-align: left;
-        margin: 0 20px;
-    }
-
-    /*---------staff----------*/
-    /*---------access----------*/
-
-    .l-access__grid {
-        grid-area: access;
-        display: grid;
-        display: -ms-grid;
-        grid-template: "a-text a-map";
-        max-width: 1080px;
-    }
-
-    .access__textarea {
-        grid-area: a-text;
-        padding: 30px 50px 40px;
-        margin: 0 auto;
-        background: #fff;
-        margin: 0;
-    }
-
-    .access__map {
-        grid-area: a-map;
-    }
-
-    /*---------access----------*/
-    /*---------footer----------*/
-
-    .footer__title {
-        font-size: 2.4rem;
-        margin-bottom: 15px;
-    }
-
-    .sns__list {
-        margin-bottom: 15px;
-    }
-
-    .sns__list li {
-        max-width: 40px;
-    }
-
-    .sns__list li + li {
-        margin-left: 20px;
-    }
-
-    .footer__nav {
-        font-size: 1.2rem;
-    }
-
-    .f-nav__link {
-        margin-bottom: 25px;
-    }
-
-    .footer__btn {
-        display: inline-block;
-        width: 110px;
-        height: 25px;
-        line-height: 25px;
-        font-size: 1.4rem;
-        margin-left: 10px;
-    }
-
-    .f__copy {
-        font-size: 1rem;
-    }
-}
-
-/*-------------------------------------
-              Menuページ
--------------------------------------*/
-
-.menu__list {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 130px;
-}
-
-.menu__item {
-    margin-bottom: 70px;
-}
-
-.menu__item h3 {
-    font-size: 2.4rem;
-    font-family: "Libre Baskerville", serif;
-    text-align: left;
-    margin: 0 auto 20px;
-    padding-left: 10px;
-    border-left: 3px solid #333;
-    border-bottom: 1px solid #555;
-    max-width: 600px;
-    width: 100%;
-}
-
-.menu__detail {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 15px;
-}
-
-.menu__detail p {
-    font-size: 1.4rem;
-}
-
-@media screen and (min-width: 768px) {
-    .menu__item {
-        max-width: 1080px;
-        width: 100%;
-    }
-
-    .menu__detail {
-        padding-left: 60px;
-        padding-right: 60px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .menu__item h3 {
-        max-width: 1080px;
-        width: 100%;
-        display: block;
-    }
-}
-
-/*-------------------------------------
-              Styleページ
--------------------------------------*/
-
-.l-style {
-    padding-bottom: 100px;
-}
-
-.style__list {
-    margin-top: 50px;
-}
-
-.style__item + .style__item {
-    margin-top: 100px;
-}
-
-.style__item p {
-    font-size: 2.4rem;
-    font-family: "Libre Baskerville", serif;
-}
-
-@media screen and (min-width: 768px) {
-    .style__wrap {
-        min-height: 100vh;
-    }
-
-    .style__list {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-        position: relative;
-        max-width: 1080px;
-        width: 100%;
-        min-height: 560px;
-    }
-
-    .style__item + .style__item {
-        margin-top: 0;
-        margin-left: 26px;
-    }
-
-    .style__item {
-        max-width: 250px;
-        max-height: 345px;
-    }
-
-    .item__02 {
-        padding-top: 185px;
-        position: relative;
-    }
-
-    .item__02 p {
-        position: absolute;
-        top: 150px;
-    }
-
-    .item__03 {
-        padding-top: 40px;
-    }
-
-    .item__04 {
-        padding-top: 110px;
-        position: relative;
-    }
-
-    .item__04 p {
-        position: absolute;
-        top: 75px;
-    }
-}
-
-/*-------------------------------------
-              Contactページ
--------------------------------------*/
-
-.l-contact {
-    padding-bottom: 100px;
-}
-
-.contact__intro {
-    text-align: left;
-    margin: 0 65px 50px;
-}
-
-form {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-label,
-.inquiry__text {
-    margin-bottom: 5px;
-    display: block;
-    text-align: left;
-    font-size: 1.6rem;
-}
-
-.inquiry__text {
-    font-size: 1.2rem;
-}
-
-input,
-textarea {
-    display: block;
-    max-width: 600px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: "Sawarabi Mincho", "Segoe UI", sans-serif;
-}
-
-form div + div {
-    margin-top: 30px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    border: 1px solid #555;
-    padding: 5px;
-    outline: none;
-}
-
-textarea {
-    height: 150px;
-}
-
-.inquiry__btn {
-    width: 100px;
-    height: 40px;
-    font-size: 1.6rem;
-    cursor: pointer;
-    margin: 50px auto 0;
-}
-
-@media screen and (min-width: 768px) {
-    label,
-    .inquiry__box {
-        display: inline-block;
-        width: 160px;
-        text-align: left;
-    }
-
-    .inquiry__box {
-        max-height: 200px;
-        height: 100%;
-        vertical-align: top;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        margin-left: 30px;
-        display: inline-block;
-        max-width: 400px;
-        width: 100%;
-    }
-
-    textarea {
-        height: 200px;
-        resize: none;
-    }
-}
-
-/*-------------------------------------
-              Recruitページ
--------------------------------------*/
-
-.l-recruit {
-    padding-bottom: 100px;
-}
-
-.recruit__wrap {
-    text-align: left;
-}
-
-.recruit__list {
-    max-width: 450px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-
-.recruit__list dt {
-    display: inline-block;
-    text-align: left;
-    max-width: 225px;
-    width: 100%;
-    font-size: 1.6rem;
-}
-
-.recruit__list dd {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.recruit__text01,
-.recruit__text02 {
-    margin-right: 80px;
-    margin-left: 80px;
-}
-
-.recruit__text01 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.recruit__text02 {
-    margin-bottom: 70px;
-}
-
-.recruit__text03 {
-    text-align: center;
-}
-
-.recruit__btn {
-    width: 155px;
-    height: 35px;
-    line-height: 35px;
-    background: #555;
-    position: relative;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    padding-right: 10px;
-    padding-left: 15px;
-    margin: 25px auto 0;
-}
-
-.recruit__btn a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding-left: 15px;
-    border: none;
-}
-
-.recruit__btn a:hover {
-    opacity: 0.8;
-}
-
-@media screen and (min-width: 768px) {
-    .recruit__list {
-        max-width: 300px;
-        width: 100%;
-        margin-left: 200px;
-        margin-bottom: 60px;
-    }
-
-    .recruit__list dt {
-        max-width: 150px;
-    }
-
-    .recruit__btn {
-        width: 140px;
-        font-size: 1.6rem;
-        padding-right: 0;
-        padding-left: 15px;
-    }
-
-    .recruit__btn a {
-        padding-left: 10px;
-    }
-}
-
-.delate-area {
-    position: absolute;
-    left: -9999px;
-}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Salon Kotori</title>
+  <meta name="description"
+    content="Hair Salon Kotoriは小鳥町の駅近くにあるヘアサロンです。隠れ家のように安心出来る空間を心がけておりますので、コロナで極力人と接触したくない方にも安心してお越しください。">
+  <meta name="keywords" content="小鳥町,美容室,美容院,ヘアサロン,コロナ対策,個室">
+  <link rel="icon" type="img/png" href="img/ファビコン.png">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="grid">
+    <!--header-->
+    <header class="l-header">
+      <div class="container header__wrap clearfix">
+        <h1>
+          <a href="index.html">
+            <img class="p-logo" src="img/Hair Salon Kotori-logo.png" alt="Hair Salon Kotoriロゴ画像">
+          </a>
+        </h1>
+        <div class="nav__open">
+          <i class="fas fa-bars fa-fw" id="open"></i>
+          <p>Menu</p>
+        </div>
+        <nav>
+          <ul class="header__nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#access">Access</a></li>
+            <li class="btn__contact"><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="menu" class="clearfix">
+        <i id="close" class="fas fa-times fa-fw nav__close"></i>
+        <nav>
+          <ul class="header__nav--sm">
+            <li><a href="#top">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--top__img-->
+    <main>
+      <div id="top" class="top-img">
+        <figure>
+          <img class="top-img" src="img/top-img01.png" alt="top画像">
+        </figure>
+      </div>
+
+      <!--concept-->
+      <section class="l-concept effect-fade">
+        <div class="container l-concept__grid">
+          <div class="concept__textarea">
+            <h2 class="concept__title">Concept</h2>
+            <p class="concept__text01">髪型ひとつで気分が変わる<br>このサイトは練習用です。</p>
+            <p class="concept__text02">当サロンの店長は、小鳥町が大好きです。<br>
+              この町を歩く人がみんな笑顔だったらいいのに...。<br>
+              そんな思いを胸に、お越しいただいたお客さまの一番の笑顔を引き出せるように、スタッフ一同励んでおります。また、新型コロナで不安なお客さまにもご安心して過ごして頂けるよう、最善の予防をつくしてお待ちしております。
+            </p>
+            <p class="concept__text03">ご予約はお電話又はお問い合わせフォームからお気軽にどうぞ。ご希望のスタイルが得意なスタッフが担当いたします。</p>
+          </div>
+          <div class="concept__img">
+            <span class="img__bg"></span>
+            <figure><img src="img/小物.jpg" alt="小物の画像"></figure>
+            <p class="bg_text">COZY</p>
+          </div>
+        </div>
+      </section>
+
+      <!--measures-->
+      <section class="l-measures container effect-fade">
+        <h2 class="section__title">当店のコロナ対策</h2>
+        <p class="measures__intro">お客様に安心して時間を過ごしていただきたいので、当店では下記の対策を行っております。</p>
+
+        <ul class="measures__list">
+          <li class="measures__item"><img src="img/対策1-g.png" alt="コロナ対策01">
+            <p class="measures__text">全スタッフのマスク着用（お客さまがマスクしたまま施術することも可能です。）</p>
+          </li>
+          <li class="measures__item item-center"><img src="img/対策2-g.png" alt="コロナ対策02">
+            <p class="measures__text">入口で手指消毒（スタッフもお客さまの荷物をお預かりする前に消毒いたします。）</p>
+          </li>
+          <li class="measures__item"><img src="img/対策3-g.png" alt="コロナ対策03">
+            <p class="measures__text">お客さまの座席・カットクロスも毎回消毒してから使用します。</p>
+          </li>
+          <li class="measures__item"><img src="img/対策4-g.png" alt="コロナ対策04">
+            <p class="measures__text">窓を開けて常に喚起を行います。</p>
+          </li>
+          <li class="measures__item item-center"><img src="img/対策5-g.png" alt="コロナ対策05">
+            <p class="measures__text">席の間隔は2ｍ以上離し、席の移動もお客さま同士が重ならない導線でご案内します。</p>
+          </li>
+          <li class="measures__item"><img src="img/対策6-g.png" alt="コロナ対策06">
+            <p class="measures__text">ウイルスが付着しやすい髪の毛はよく洗い流します。</p>
+          </li>
+          <li class="measures__item"><img src="img/対策7-g.png" alt="コロナ対策07">
+            <p class="measures__text">使用した器具は毎回つけ置き消毒します。</p>
+          </li>
+          <li class="measures__item item-center"><img src="img/対策8-g.png" alt="コロナ対策08">
+            <p class="measures__text">免疫力をあげるために、お客さまが笑顔になるような時間を過ごしていただきます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!--information-->
+      <section class="l-info container effect-fade">
+        <h2 class="section__title">Information</h2>
+        <ul class="info__list">
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+          <li>
+            <p class="info__date">2020.04.04</p>
+            <p class="info__news"><a href="#">お知らせです。お知らせです。お知らせです。</a></p>
+          </li>
+        </ul>
+        <div class="info__btn"><a href="info.html">Read More</a></div>
+      </section>
+
+      <!--staff-->
+      <section id="staff" class="l-staff effect-fade">
+        <div class="container">
+          <h2 class="section__title staff__title">Staff</h2>
+          <div class="l-staff__grid">
+            <dl class="staff__box staff__box01">
+              <dt class="staff__img"><img src="img/staff01.png" alt="店長　森ことり"></dt>
+              <dd class="staff__name">店長　森ことり</dd>
+              <dd class="staff__text">イメージチェンジはおまかせください。「こうなりたい」に少しでも近づくお手伝いをいたします。</dd>
+            </dl>
+            <dl class="staff__box staff__box02">
+              <dt class="staff__img"><img src="img/staff02.png" alt="Staff　鳥林はな"></dt>
+              <dd class="staff__name">Staff　鳥林はな</dd>
+              <dd class="staff__text">ショートヘヤーが得意です。相談しながら進めましょう！</dd>
+            </dl>
+            <dl class="staff__box staff__box03">
+              <dt class="staff__img"><img src="img/staff03.png" alt="Staff　江中さくら"></dt>
+              <dd class="staff__name">Staff　江中さくら</dd>
+              <dd class="staff__text">シャンプー＆マッサージ担当です。気分転換にいらしてくださいね。
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!--access-->
+      <!--
+      <section id="access" class="l-access effect-fade">
+        <div class="container">
+          <h2 class="section__title">Access</h2>
+          <div class="l-access__grid">
+            <div class="access__textarea">
+              <h3>Hair Salon Kotori</h3>
+              <dl class="access__box">
+                <dt class="access__text--left">〒000-0000</dt>
+                <dd class="access__text--right">東京都○○区小鳥町〇〇<br>JR小鳥駅から徒歩3分</dd>
+                <dt class="access__text--left">TEL：</dt>
+                <dd class="access__text--right">03-XXXX-XXXX</dd>
+                <dt class="access__text--left">OPEN：</dt>
+                <dd class="access__text--right">10:00～19:00</dd>
+                <dt class="access__text--left">CLOSE：</dt>
+                <dd class="access__text--right">月・火・祝</dd>
+              </dl>
+              <div class="btn__contact access__btn"><i class="fas fa-envelope"></i><a href="contact.html">ご予約こちら</a>
+              </div>
+            </div>
+            <div class="access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102875.13140818536!2d145.92232025338117!3d-16.620748377059698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69783b1b9b8af6eb%3A0xcc69205dec742b8d!2z44Of44Kr44Ko44Or44Oe44K544O744Kx44Kk!5e0!3m2!1sja!2sjp!4v1596938181339!5m2!1sja!2sjp"
+                width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>-->
+
+
+    </main>
+
+    <!--footer-->
+    <footer class="l-footer">
+      <div class="footer__wap">
+        <h2 class="section__title footer__title">SNS</h2>
+        <ul class="sns__list">
+          <li><a href="#"><img class="sns__item" src="img/twitter黒.png" alt="twitterリンク"></a></li>
+          <li><a href="#"><img class="sns__item" src="img/FACEBOOK黒.png" alt="FACEBOOKリンク"></a></li>
+          <li><a href="#"><img class="sns__item" src="img/WordPress黒.png" alt="WordPressリンク"></a></li>
+        </ul>
+        <nav>
+          <ul class="footer__nav">
+            <li class="f-nav__link"><a href="#top">Top</a></li>
+            <li class="f-nav__link"><a href="recruit.html">Recruit</a></li>
+            <li class="btn__contact footer__btn"><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="f__copy">Copyright 2020 Hair Salon Kotori</p>
+      </div>
+    </footer>
+
+  </div>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
