@@ -83,7 +83,7 @@ body {
 }
 
 html {
-    font-size: 150px;
+    font-size: 62.5%;
 }
 
 body {
@@ -97,7 +97,7 @@ body {
     box-sizing: border-box;
     text-align: justify;
     letter-spacing: 0.05em;
-    font-size: 0.16rem;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 
@@ -132,19 +132,19 @@ img {
 }
 
 h1 {
-    font-size: 0.32rem;
+    font-size: 3.2rem;
 }
 
 h2 {
-    font-size: 0.24rem;
+    font-size: 2.4rem;
 }
 
 h3 {
-    font-size: 0.2rem;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 0.16rem;
+    font-size: 1.6rem;
 }
 
 /*---------------リセット---------------*/
@@ -172,10 +172,10 @@ p {
     margin: 0 auto;
     min-height: 100vh;
     display: grid;
-    grid-template: 
-    "header" 100px 
-    "main  " 1fr 
-    "footer" 300px;
+    grid-template:
+        "header" 100px
+        "main  " 1fr
+        "footer" 300px;
 }
 
 .container {
@@ -211,13 +211,13 @@ main {
     grid-area: main;
     display: grid;
     display: -ms-grid;
-    grid-template: 
-    "img     " 
-    "concept " 
-    "measures" 
-    "info    " 
-    "staff   " 
-    "access  ";
+    grid-template:
+        "img     "
+        "concept "
+        "measures"
+        "info    "
+        "staff   "
+        "access  ";
 }
 
 .l-top__img {
@@ -274,7 +274,7 @@ a:hover {
 
 .section__title {
     font-family: "Amiri", serif;
-    font-size: 0.34rem;
+    font-size: 3.4rem;
     font-weight: normal;
     position: relative;
     display: inline-block;
@@ -363,7 +363,7 @@ body.menu-open .nav__open {
 
 .header__nav--sm {
     text-align: center;
-    font-size: 0.24rem;
+    font-size: 2.4rem;
     font-family: serif;
     margin-top: 100px;
 }
@@ -405,17 +405,17 @@ body.menu-open .nav__open {
     float: right;
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 40px;
     cursor: pointer;
 }
 
 #open,
 #close {
-    font-size: 0.4rem;
+    font-size: 6rem;
 }
 
 .nav__open p {
-    font-size: 0.1rem;
+    font-size: 1.4rem;
     margin-top: -6px;
 }
 
@@ -460,7 +460,7 @@ body.menu-open .nav__open {
 
 .concept__title {
     font-family: "Amiri", serif;
-    font-size: 0.34rem;
+    font-size: 3.4rem;
     font-weight: normal;
     display: inline-block;
     padding-top: 80px;
@@ -469,7 +469,7 @@ body.menu-open .nav__open {
 }
 
 .concept__text01 {
-    font-size: 0.24rem;
+    font-size: 2.4rem;
     margin-bottom: 40px;
 }
 
@@ -514,7 +514,7 @@ body.menu-open .nav__open {
 
 .bg_text {
     color: rgba(255, 255, 255, 0.4);
-    font-size: 0.6rem;
+    font-size: 6rem;
     writing-mode: vertical-rl;
     position: absolute;
     top: 50%;
@@ -569,7 +569,7 @@ body.menu-open .nav__open {
 
 .info__list li {
     display: flex;
-    max-width: 680px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto 10px;
 }
@@ -600,7 +600,7 @@ body.menu-open .nav__open {
     height: 55px;
     line-height: 55px;
     border: 1px solid #333;
-    font-size: 0.16rem;
+    font-size: 1.6rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -637,7 +637,7 @@ body.menu-open .nav__open {
 }
 
 .staff__name {
-    font-size: 0.2rem;
+    font-size: 2rem;
     padding-bottom: 15px;
 }
 
@@ -666,7 +666,7 @@ body.menu-open .nav__open {
 }
 
 .access__textarea h3 {
-    font-size: 0.24rem;
+    font-size: 2.4rem;
     font-weight: normal;
     font-family: "Amiri", serif;
     margin-bottom: 25px;
@@ -676,7 +676,7 @@ body.menu-open .nav__open {
     width: 35%;
     text-align: left;
     margin-bottom: 15px;
-    font-size: 0.14rem;
+    font-size: 1.4rem;
 }
 
 .access__text--right {
@@ -689,7 +689,7 @@ body.menu-open .nav__open {
     width: 200px;
     height: 38px;
     line-height: 38px;
-    font-size: 0.14rem;
+    font-size: 1.4rem;
     background: #888;
 }
 
@@ -706,7 +706,7 @@ body.menu-open .nav__open {
 }
 
 .footer__title {
-    font-size: 0.18rem;
+    font-size: 1.8rem;
     padding-bottom: 5px;
     padding-top: 30px;
     margin-bottom: 20px;
@@ -734,7 +734,7 @@ body.menu-open .nav__open {
     font-family: "Amiri", serif;
     display: inline-block;
     margin-bottom: 10px;
-    font-size: 0.16rem;
+    font-size: 1.6rem;
 }
 
 .f-nav__link + .f-nav__link {
@@ -749,7 +749,7 @@ body.menu-open .nav__open {
     width: 120px;
     height: 30px;
     line-height: 30px;
-    font-size: 0.1rem;
+    font-size: 1rem;
 }
 
 .footer__btn a:hover {
@@ -757,7 +757,7 @@ body.menu-open .nav__open {
 }
 
 .f__copy {
-    font-size: 0.08rem;
+    font-size: 0.8rem;
 }
 
 /*---------------footer---------------*/
@@ -765,26 +765,34 @@ body.menu-open .nav__open {
 /*---------------レスポンシブ---------------*/
 
 @media screen and (min-width: 768px) {
-    html {
-        font-size: 100px;
-    }
     .grid {
-        max-width: 12.8rem;
+        max-width: 1280px;
         width: 100%;
         margin: 0 auto;
         min-height: 100vh;
         display: grid;
-        grid-template: "header" 50px "main  " 1fr "footer" 230px;
+        grid-template:
+            "header" 50px
+            "main  " 1fr
+            "footer" 230px;
     }
+
     main {
         margin: 0 auto;
         grid-area: main;
         display: grid;
         display: -ms-grid;
-        grid-template: "img     " "concept " "measures" "info    " "staff   " "access  ";
+        grid-template:
+            "img     "
+            "concept "
+            "measures"
+            "info    "
+            "staff   "
+            "access  ";
     }
     /*---------grid----------*/
     /*---------common----------*/
+
     .container {
         max-width: 1080px;
         width: 100%;
@@ -792,192 +800,238 @@ body.menu-open .nav__open {
         padding-left: 0;
         margin: 0 auto;
     }
+
     /*---------common----------*/
     /*---------nav----------*/
+
     .l-header,
     .header__wap {
         height: 50px;
     }
+
     .p-logo {
         max-width: 150px;
         width: 100%;
     }
+
     #menu {
         display: none;
     }
+
     .nav__open {
         display: none;
     }
+
     .header__nav {
         font-family: "Amiri", serif;
         display: block;
         align-items: center;
-        font-size: 0.18rem;
+        font-size: 1.8rem;
         position: relative;
         position: absolute;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
     }
+
     .header__nav li {
         display: inline-block;
     }
+
     .header__nav li + li {
-        margin-left: 0.4rem;
+        margin-left: 40px;
     }
+
     /*---------nav----------*/
     /*---------top-img----------*/
+
     .top-img {
-        max-width: 1280px;
-        width: 100%;
+        /*max-width: 1280px;
+        width: 100%;*/
         max-height: 700px;
         margin: 0 auto;
         padding: 0;
     }
+
     /*---------top-img----------*/
     /*---------concept----------*/
+
     .l-concept {
         background-image: url(../img/concept__bg.png);
         max-width: 1280px;
         width: 100%;
         height: 100%;
     }
+
     .l-concept__grid {
         grid-area: concept;
         max-width: 1280px;
         display: grid;
         display: -ms-grid;
-        grid-template: "c-text c-img" 700px /52% 48%;
+        grid-template:
+            "c-text c-img" 700px
+            /52% 48%;
         position: relative;
     }
+
     .concept__textarea {
         grid-area: c-text;
         text-align: left;
-        margin-right: 0.5rem;
-        margin-left: 1rem;
+        margin-right: 6.52%;
+        margin-left: 13.04%;
     }
+
     .concept__text02,
     .concept__text03 {
         margin-right: 0;
         margin-left: 0;
     }
+
     .concept__img {
         grid-area: c-img;
     }
+
     .concept__img img {
         position: absolute;
-        max-width: 4.5rem;
-        width: 100%;
+        width: 450px;
         top: 0;
         bottom: 0;
-        margin: auto;
-        right: 2rem;
+        right: 26.08%;
+        /*margin: auto;*/
     }
+
     .img__bg {
         background-color: rgba(222, 184, 135, 0.6);
         position: absolute;
-        max-width: 5rem;
-        top: 1rem;
+        max-width: 500px;
+        top: 100px;
         right: 0;
         display: block;
         overflow: hidden;
         z-index: -1;
     }
+
     .bg_text {
         color: rgba(255, 255, 255, 0.4);
-        font-size: 1rem;
+        font-size: 10rem;
         writing-mode: vertical-rl;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 2%;
     }
+
     /*---------concept----------*/
     /*---------measures----------*/
+
     .l-measures {
-        padding-bottom: 0.5rem;
+        padding-bottom: 50px;
     }
+
     .measures__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: space-between;
     }
+
     .measures__list:after {
         content: "";
         display: block;
         width: 300px;
         height: 0;
     }
+
     .measures__item img {
-        max-width: 3rem;
+        max-width: 300px;
         width: 100%;
-        margin-bottom: 0.5rem;
+        margin-bottom: 50px;
     }
+
     .measures__item + .measures__item {
         margin-top: 0;
     }
+
     .measures__text {
         position: absolute;
-        top: 2.1rem;
-        max-width: 2.5rem;
-        padding-right: 0.25rem;
-        padding-left: 0.25rem;
+        top: 210px;
+        max-width: 250px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
+
     /*---------measures----------*/
     /*---------info----------*/
+
     .info__list li {
         max-width: 500px;
         width: 100%;
     }
+
     /*---------info----------*/
     /*---------staff----------*/
+
     .l-staff {
         background-color: #fff;
         background-image: url(../img/木目bg.jpg);
     }
+
     .l-staff__grid {
         grid-area: staff;
-        display: grid;
+        /* display: grid;
         display: -ms-grid;
-        gap: 90px;
-        grid-template: "staff01 staff02 staff03" /1fr 1fr 1fr;
+        gap: 11.73%;
+        grid-template: 
+        "staff01 staff02 staff03" 
+        /1fr 1fr 1fr;*/
+        display: flex;
     }
+
     .staff__title {
         color: #fff;
         text-shadow: 1px 1px 5px #333;
     }
+
     .staff__title::after {
         background: #fff;
     }
+
     .staff__box {
-        height: 4.5rem;
+        height: 450px;
         background: #fff;
-        margin: 0 auto;
+        margin: 0 40px;
         box-shadow: 0 0 6px #c0c0c0;
     }
+
     .staff__box01 {
         grid-area: staff01;
     }
+
     .staff__box02 {
         grid-area: staff02;
     }
+
     .staff__box03 {
         grid-area: staff03;
     }
+
     .staff__box + .staff__box {
         margin-top: 0;
     }
+
     .staff__name {
         padding-top: 0;
-        padding-bottom: 0.2rem;
+        padding-bottom: 20px;
     }
+
     .staff__text {
         text-align: left;
-        margin: 0 0.2rem;
+        margin: 0 20px;
     }
+
     /*---------staff----------*/
     /*---------access----------*/
+
     .l-access__grid {
         grid-area: access;
         display: grid;
@@ -985,6 +1039,7 @@ body.menu-open .nav__open {
         grid-template: "a-text a-map";
         max-width: 1080px;
     }
+
     .access__textarea {
         grid-area: a-text;
         padding: 30px 50px 40px;
@@ -992,40 +1047,50 @@ body.menu-open .nav__open {
         background: #fff;
         margin: 0;
     }
+
     .access__map {
         grid-area: a-map;
     }
+
     /*---------access----------*/
     /*---------footer----------*/
+
     .footer__title {
-        font-size: 0.24rem;
+        font-size: 2.4rem;
         margin-bottom: 15px;
     }
+
     .sns__list {
         margin-bottom: 15px;
     }
+
     .sns__list li {
         max-width: 40px;
     }
+
     .sns__list li + li {
         margin-left: 20px;
     }
+
     .footer__nav {
-        font-size: 0.12rem;
+        font-size: 1.2rem;
     }
+
     .f-nav__link {
         margin-bottom: 25px;
     }
+
     .footer__btn {
         display: inline-block;
         width: 110px;
         height: 25px;
         line-height: 25px;
-        font-size: 0.14rem;
+        font-size: 1.4rem;
         margin-left: 10px;
     }
+
     .f__copy {
-        font-size: 0.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -1044,7 +1109,7 @@ body.menu-open .nav__open {
 }
 
 .menu__item h3 {
-    font-size: 0.24rem;
+    font-size: 2.4rem;
     font-family: "Libre Baskerville", serif;
     text-align: left;
     margin: 0 auto 20px;
@@ -1064,7 +1129,7 @@ body.menu-open .nav__open {
 }
 
 .menu__detail p {
-    font-size: 0.14rem;
+    font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1072,12 +1137,14 @@ body.menu-open .nav__open {
         max-width: 1080px;
         width: 100%;
     }
+
     .menu__detail {
         padding-left: 60px;
         padding-right: 60px;
         width: 100%;
         box-sizing: border-box;
     }
+
     .menu__item h3 {
         max-width: 1080px;
         width: 100%;
@@ -1102,7 +1169,7 @@ body.menu-open .nav__open {
 }
 
 .style__item p {
-    font-size: 0.24rem;
+    font-size: 2.4rem;
     font-family: "Libre Baskerville", serif;
 }
 
@@ -1110,6 +1177,7 @@ body.menu-open .nav__open {
     .style__wrap {
         min-height: 100vh;
     }
+
     .style__list {
         display: flex;
         justify-content: space-between;
@@ -1119,29 +1187,36 @@ body.menu-open .nav__open {
         width: 100%;
         min-height: 560px;
     }
+
     .style__item + .style__item {
         margin-top: 0;
         margin-left: 26px;
     }
+
     .style__item {
         max-width: 250px;
         max-height: 345px;
     }
+
     .item__02 {
         padding-top: 185px;
         position: relative;
     }
+
     .item__02 p {
         position: absolute;
         top: 150px;
     }
+
     .item__03 {
         padding-top: 40px;
     }
+
     .item__04 {
         padding-top: 110px;
         position: relative;
     }
+
     .item__04 p {
         position: absolute;
         top: 75px;
@@ -1172,11 +1247,11 @@ label,
     margin-bottom: 5px;
     display: block;
     text-align: left;
-    font-size: 0.16rem;
+    font-size: 1.6rem;
 }
 
 .inquiry__text {
-    font-size: 0.12rem;
+    font-size: 1.2rem;
 }
 
 input,
@@ -1207,7 +1282,7 @@ textarea {
 .inquiry__btn {
     width: 100px;
     height: 40px;
-    font-size: 0.16rem;
+    font-size: 1.6rem;
     cursor: pointer;
     margin: 50px auto 0;
 }
@@ -1219,11 +1294,13 @@ textarea {
         width: 160px;
         text-align: left;
     }
+
     .inquiry__box {
         max-height: 200px;
         height: 100%;
         vertical-align: top;
     }
+
     input[type="text"],
     input[type="email"],
     textarea {
@@ -1232,6 +1309,7 @@ textarea {
         max-width: 400px;
         width: 100%;
     }
+
     textarea {
         height: 200px;
         resize: none;
@@ -1262,7 +1340,7 @@ textarea {
     text-align: left;
     max-width: 225px;
     width: 100%;
-    font-size: 0.16rem;
+    font-size: 1.6rem;
 }
 
 .recruit__list dd {
@@ -1277,12 +1355,12 @@ textarea {
 }
 
 .recruit__text01 {
-    font-size: 0.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .recruit__text02 {
-    margin-bottom: 0.7rem;
+    margin-bottom: 70px;
 }
 
 .recruit__text03 {
@@ -1296,7 +1374,7 @@ textarea {
     background: #555;
     position: relative;
     border-radius: 20px;
-    font-size: 0.12rem;
+    font-size: 1.2rem;
     padding-right: 10px;
     padding-left: 15px;
     margin: 25px auto 0;
@@ -1316,9 +1394,9 @@ textarea {
 
 @media screen and (min-width: 768px) {
     .recruit__list {
-        max-width: 3rem;
+        max-width: 300px;
         width: 100%;
-        margin-left: 2rem;
+        margin-left: 200px;
         margin-bottom: 60px;
     }
 
@@ -1328,7 +1406,7 @@ textarea {
 
     .recruit__btn {
         width: 140px;
-        font-size: 0.16rem;
+        font-size: 1.6rem;
         padding-right: 0;
         padding-left: 15px;
     }
