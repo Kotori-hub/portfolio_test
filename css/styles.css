@@ -405,7 +405,7 @@ body.menu-open .nav__open {
     float: right;
     position: absolute;
     top: 15px;
-    right: 40px;
+    right: 20px;
     cursor: pointer;
 }
 
