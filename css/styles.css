@@ -549,12 +549,13 @@ body.menu-open .nav__open {
 
 .measures__text {
     position: absolute;
-    top: 70;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
     max-width: 340px;
     width: 100%;
+    background: pink;
 }
 
 /*---------------measures---------------*/
