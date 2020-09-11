@@ -571,13 +571,12 @@ body.menu-open .nav__open {
 
 .info__list li {
     display: flex;
-    max-width: 460px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto 10px;
 }
 
 .info__news {
-    margin-left: 15px;
+    margin-left: 10px;
     position: relative;
 }
 
