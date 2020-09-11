@@ -307,7 +307,7 @@ a:hover {
 }
 
 .btn__contact a {
-    font-family: 'Century Gothic', sans-serif;
+    font-family: "Century Gothic", sans-serif;
     display: inline-block;
     padding-left: 5px;
     color: #fff;
@@ -548,13 +548,13 @@ body.menu-open .nav__open {
 }
 
 .measures__text {
-    text-align: left;
     position: absolute;
-    top: 70%;
+    top: 280px;
     left: 50%;
     transform: translateX(-50%);
-    width: 73%;
-    display: block;
+    text-align: left;
+    max-width: 340px;
+    width: 100%;
 }
 
 /*---------------measures---------------*/
@@ -744,8 +744,8 @@ body.menu-open .nav__open {
     padding-left: 10px;
 }
 
-.footer__btn {    
-    display: block;    
+.footer__btn {
+    display: block;
     margin: 0 auto 30px;
     width: 110px;
     height: 25px;
