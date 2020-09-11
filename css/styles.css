@@ -548,13 +548,12 @@ body.menu-open .nav__open {
 }
 
 .measures__text {
+    text-align: left;
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
-    text-align: left;
-    max-width: 340px;
-    width: 100%;
+    width: 52.15%;
 }
 
 /*---------------measures---------------*/
