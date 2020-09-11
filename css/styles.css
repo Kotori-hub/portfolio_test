@@ -1038,9 +1038,10 @@ body.menu-open .nav__open {
         grid-area: access;
         display: grid;
         display: -ms-grid;
-        grid-template-columns: 1fr 500px;
-        -ms-grid-columns: 1fr 500px;
+        grid-template: 
+        "a-text a-map";
         max-width: 1080px;
+        box-sizing: border-box;
     }
 
     .access__textarea {
@@ -1048,12 +1049,12 @@ body.menu-open .nav__open {
         padding: 30px 50px 40px;
         margin: 0 auto;
         background: #fff;
-        background: pink;
         margin: 0;
     }
 
     .access__map {
         grid-area: a-map;
+        width: 500px;
     }
 
     /*---------access----------*/
