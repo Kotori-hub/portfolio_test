@@ -506,8 +506,6 @@ body.menu-open .nav__open {
     width: 100%;
     height: 300px;
     display: block;
-    /*margin-right: 10px;
-  margin-left: 10px;*/
     padding-top: 100px;
     padding-bottom: 100px;
     z-index: -1;
@@ -570,7 +568,7 @@ body.menu-open .nav__open {
 
 .info__list li {
     display: flex;
-    max-width: 500px;
+    max-width: 460px;
     width: 100%;
     margin: 0 auto 10px;
 }
