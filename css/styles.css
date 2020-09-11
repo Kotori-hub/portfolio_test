@@ -571,6 +571,7 @@ body.menu-open .nav__open {
 
 .info__list li {
     display: flex;
+    max-width: 450px;
     width: 100%;
     margin: 0 auto 10px;
     /*background: pink;*/
