@@ -395,7 +395,8 @@ body.menu-open .nav__open {
 }
 
 .p-logo {
-    width: 32.59%;
+    max-width: 250px;
+    width: 100%;
     float: left;
     position: absolute;
     top: 50%;
