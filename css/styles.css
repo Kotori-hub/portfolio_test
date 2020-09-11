@@ -573,6 +573,7 @@ body.menu-open .nav__open {
     display: flex;
     width: 90%;
     margin: 0 auto 10px;
+    background: pink;
 }
 
 .info__news {
