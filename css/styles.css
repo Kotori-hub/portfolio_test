@@ -564,16 +564,17 @@ body.menu-open .nav__open {
 /*---------------information---------------*/
 
 .info__list {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     color: #000;
     padding-bottom: 50px;
 }
 
 .info__list li {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto 10px;
     background: pink;
+    font-size: 1.6rem;
 }
 
 .info__news {
