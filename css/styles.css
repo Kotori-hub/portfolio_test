@@ -549,7 +549,7 @@ body.menu-open .nav__open {
 
 .measures__text {
     position: absolute;
-    top: 280px;
+    top: 70;
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
