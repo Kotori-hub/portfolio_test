@@ -661,6 +661,7 @@ body.menu-open .nav__open {
     padding-bottom: 80%;
     position: relative;
     max-width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1088,8 +1089,7 @@ body.menu-open .nav__open {
 
     /*---------staff----------*/
     /*---------access----------*/
-
-    /*
+/*
     .l-access__grid {
         grid-area: access;
         display: grid;
@@ -1110,8 +1110,8 @@ body.menu-open .nav__open {
     .access__map {
         grid-area: a-map;
         width: 46.3%;
-    }
-*/
+    }*/
+
     /*---------access----------*/
     /*---------footer----------*/
 
