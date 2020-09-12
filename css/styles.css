@@ -1093,9 +1093,10 @@ body.menu-open .nav__open {
 
     .l-access__grid {
         grid-area: access;
-        display: flex;
-        /*display: -ms-grid;
-        grid-template: "a-text a-map";*/
+        display: grid;
+        display: -ms-grid;
+        grid-template: "a-text a-map"
+        /500px 1fr;        
         max-width: 1080px;
         box-sizing: border-box;
     }
