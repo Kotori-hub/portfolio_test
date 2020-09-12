@@ -574,8 +574,7 @@ body.menu-open .nav__open {
     max-width: 460px;
     width: 100%;
     margin: 0 auto 10px;
-    font-size: 1.4rem;
-    background: pink;
+    font-size: 1.2rem;
 }
 
 .info__news {
