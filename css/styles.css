@@ -574,7 +574,8 @@ body.menu-open .nav__open {
     max-width: 460px;
     width: 100%;
     margin: 0 auto 10px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    background: pink;
 }
 
 .info__news {
@@ -658,7 +659,7 @@ body.menu-open .nav__open {
     /*表示させたいmapサイズによって数値などは変動する*/
     height: 0;
     overflow: hidden;
-    padding-bottom: 80%;
+    padding-bottom: 56.25%;
     position: relative;
     max-width: 500px;
     width: 100%;
@@ -1092,9 +1093,9 @@ body.menu-open .nav__open {
 
     .l-access__grid {
         grid-area: access;
-        display: grid;
-        display: -ms-grid;
-        grid-template: "a-text a-map";
+        display: flex;
+        /*display: -ms-grid;
+        grid-template: "a-text a-map";*/
         max-width: 1080px;
         box-sizing: border-box;
     }
@@ -1109,7 +1110,8 @@ body.menu-open .nav__open {
 
     .access__map {
         grid-area: a-map;
-        width: 46.3%;
+        width: 500px;
+        height: 400px;
     }
 
     /*---------access----------*/
