@@ -1089,6 +1089,7 @@ body.menu-open .nav__open {
     /*---------staff----------*/
     /*---------access----------*/
 
+    /*
     .l-access__grid {
         grid-area: access;
         display: grid;
@@ -1110,7 +1111,7 @@ body.menu-open .nav__open {
         grid-area: a-map;
         width: 46.3%;
     }
-
+*/
     /*---------access----------*/
     /*---------footer----------*/
 
