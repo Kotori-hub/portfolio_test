@@ -658,7 +658,7 @@ body.menu-open .nav__open {
     /*表示させたいmapサイズによって数値などは変動する*/
     height: 0;
     overflow: hidden;
-    padding-bottom: 62.5%;
+    padding-bottom: 75%;
     position: relative;
 }
 
