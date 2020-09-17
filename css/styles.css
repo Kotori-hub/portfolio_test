@@ -658,11 +658,8 @@ body.menu-open .nav__open {
     /*表示させたいmapサイズによって数値などは変動する*/
     height: 0;
     overflow: hidden;
-    padding-bottom: 56.25%;
+    padding-bottom: 62.5%;
     position: relative;
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .l-access .access__map iframe {
@@ -672,7 +669,6 @@ body.menu-open .nav__open {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    display: block;
 }
 
 .access__box {
